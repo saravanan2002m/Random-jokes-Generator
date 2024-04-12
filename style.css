@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+}
+body{
+    background-color: pink;
+}
+.wrapper{
+    background-color: blue;
+    width: 400px;
+    margin: 100px auto;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+span{
+    display: block;
+    font-size: 100px;
+    text-align: center;
+}
+p{
+    color:#ffffff;
+    font-size: 18px;
+    margin: 10px;
+    word-break: break-word;
+    font-weight: 400;
+    opacity: 0;
+}
+button{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    margin-bottom: 5px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: aqua;
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    color: red;
+    font-weight: 200;
+}
+.fade{
+    opacity: 1;
+    transition: 1.5s;
+}

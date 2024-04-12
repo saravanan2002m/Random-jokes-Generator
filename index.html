@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+   <link rel="stylesheet" href="style.css">
+   <title>Random jokes</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+   <div class="wrapper">
+      <span>&#128514;</span>
+      <p class="joke"></p>
+      <h3> &#128071; Press the button to laugh  &#128071;</h3>
+      <button class="btn">Get random joke</button>
+   </div>
+   <script>
+      let jokeContainer=document.querySelector(".joke")
+      let btn=document.querySelector(".btn")
+      let url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+
+      function getJokes(){
+         jokeContainer.classList.remove("fade")
+         event.preventDefault();
+         fetch(url)
+         .then(data=>data.json())
+         .then(item=>{
+            jokeContainer.innerText=`${item.joke}`;
+            jokeContainer.classList.add("fade")
+         });
+      }
+      btn.addEventListener("click",getJokes)
+      getJokes();
+   </script>
+</body>
+</html>
