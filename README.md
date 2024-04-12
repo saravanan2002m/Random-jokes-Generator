@@ -19,4 +19,4 @@ This is a simple web application that generates random jokes using HTML, CSS, an
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. Click the "Generate Joke" button to see a random joke.
+3. Click the "Get random joke" button to see a random joke.
